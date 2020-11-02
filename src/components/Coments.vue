@@ -23,7 +23,6 @@
         v-bind:key="index"
         v-for="(comentario, index) in todosComentarios"
       >
-        <h3>{{ index }}</h3>
         <span class="coment__autor">Autor: {{ comentario.nome }}</span>
         <p>Mensagem: {{ comentario.mensagem }}</p>
         <a href="#" v-on:click.prevent="removerComentario(index)">Excluir</a>
