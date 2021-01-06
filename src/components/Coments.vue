@@ -23,8 +23,7 @@
       <div
         class="list-group-item"
         v-bind:key="index"
-        v-for="(comentario, index) in comentarios"
-      >
+        v-for="(comentario, index) in comentarios">
         <span class="coment__autor">Autor: {{ comentario.nome}}</span>
         <p>Mensagem: {{ comentario.mensagem}}</p>
         <a href="#" v-on:click.prevent="removerComentario(comentario.id)">Excluir</a>
